@@ -8,6 +8,8 @@ install:
   - bundle install --retry 5 --jobs=%NUMBER_OF_PROCESSORS% --clean --path vendor\bundle
 
 environment:
+  global:
+    CC: gcc
   matrix:
     - RUBY_FOLDER_VER: "25"
     - RUBY_FOLDER_VER: "25-x64"
